@@ -161,7 +161,9 @@ set(
 #
 # Set up the install paths and files
 #
-set(build_dir "umoria")
+if (NOT DEFINED build_dir)
+        set(build_dir "umoria")
+endif()
 set(data_dir "${build_dir}/data")
 
 
